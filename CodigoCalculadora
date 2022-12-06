@@ -1,0 +1,25 @@
+import java.util.Iterator;
+import java.util.Scanner;
+
+public class Calculadora {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		long total = 0;
+		long inicio = System.currentTimeMillis();
+		int x = 0;
+		int a = 1;
+		for (int i = 10000; i > 2; i--) { //Cambiar el 10000 para modificar el tiempo
+			for (int j = 1; j < 10000; j++) { //Cambiar el 10000 para modificar el tiempo
+				i + j;
+				i - j;
+				i/100 * j/100;
+				i / j;
+			}
+		}
+		long tiempo = System.currentTimeMillis() - inicio;
+		total += tiempo;
+		System.out.println(‘Tiempo total: ‘ + total + ‘ms’);
+	}
+
+}
